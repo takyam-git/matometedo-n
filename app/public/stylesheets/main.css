@@ -1,0 +1,14 @@
+h1 {
+	margin: 20px;
+	font-family: 'Geostar Fill', cursive;
+}
+
+table thead th.server_name_title, 
+tr.output_line th {
+	width: 15%;
+}
+
+table thead th.time, 
+tr.output_line th.time {
+	width: 180px;
+}

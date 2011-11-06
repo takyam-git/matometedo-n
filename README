@@ -5,7 +5,7 @@ takya ただ、これだけだとすぐに終わっちゃいそうなので、�
 
 
 
-== capファイルの使い方
+== capファイルの使い方 ==
  * required
   * ruby >= 1.9.2
   * gem install capistrano
@@ -19,3 +19,17 @@ takya ただ、これだけだとすぐに終わっちゃいそうなので、�
  * run
   * cap -f /path/to/matemetedo-n/libs/capistrano/tail.rb tail config=server1
   * server1 はconfigファイルのファイル名（拡張子無し）
+
+
+2011/11/06
+できたー！ http://takyam.com:3000/ ログをリアルタイムで吐き出すです！
+http://takyam.com/ へのアクセスログを監視してます。 GitHub( https://github.com/takyam-git/matometedo-n )コミット済みです。
+
+作り込みはできてないけど、要件は満たした！たぶん！
+config/server1.rb.sample を server1.rb とかにリネームして、中身を設定して、 
+$ forever start app.js
+とかでdaemon化して起動すればいい感じだと思うですよ！
+
+できたこと：複数のWEBサーバーの同一パスファイルをまとめてブラウザ上にTailの結果を返す。素敵！　複数の設定を同時に見れる。素敵！
+負荷とかセキュリティとか見てないので細かい事は知らないｗｗｗ
+基本的にローカルで自分だけのために使ってください。
